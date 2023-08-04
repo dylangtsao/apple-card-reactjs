@@ -1,3 +1,5 @@
+Currently working on creating a replica of Apple's product, "Apple Card," using Next.js. All images and inspiration belong to Apple. 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
