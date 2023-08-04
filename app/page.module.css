@@ -68,7 +68,7 @@
   /* position: fixed; */
   background-color: black;
   border-radius: 30px;
-  margin-right: 10px;
+  margin-right: 25px;
   padding: 0.35em;
   cursor: pointer;
 }
@@ -105,7 +105,7 @@
 
 .intro {
   width: 100vw;
-  height: 73vh;
+  height: 70vh;
   background: url("../images/title_mobile_background.jpeg") no-repeat;
   background-size: 100% auto;
   display: flex;
@@ -144,11 +144,14 @@
   font-size: 0.9em;
   font-weight: normal;
   color: black;
+  animation: cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s 1 normal forwards running fade-in;
 }
 .subtitle_link {
   font-size: 0.9em;
   font-weight: normal;
+  color: black;
   text-decoration: none;
+  animation: cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s 1 normal forwards running fade-in;
 }
 .subtitle_link:hover,
 .subtitle_link:active {
@@ -159,5 +162,117 @@
   .intro {
     background: url("../images/title_background.jpeg") no-repeat;
     background-size: 100% 100%;
+  }
+}
+
+.first_header {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 3em 3em 7em;
+  height: 100vh;
+}
+
+.first_header h1{
+  font-size: 3.5rem;
+  background: linear-gradient(to right, #f06844 0%, #ee4c54 25%, #d45e95 50%, #9c6ca6 75%, #6583c1 100%);
+  padding-right:1.4em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.first_header p{
+  padding: 2rem 1.2rem 2rem 0;
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 1.35;
+}
+
+.first_header_spacing {
+  display: none;
+}
+
+@media screen and (min-width: 570px) {
+  .first_header {
+    padding: 5em 3.5em 3em 7em;
+  }
+}
+
+@media screen and (min-width: 655px) {
+  .first_header {
+    padding: 5em 7.7em 3em 9em;
+  }
+}
+
+
+@media screen and (min-width: 736px) {
+  .first_header {
+    padding: 8em 4em;
+    height: 80vh;
+  }
+  .first_header h1{
+    text-align: center;
+    font-size: 5rem;
+    padding-right: 0;
+  }
+  .first_header p{
+    font-size: 1.45rem;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .first_header {
+    padding: 8em 2em;
+    height: 75vh;
+  }
+  .first_header h1 {
+    font-size: 5rem;
+    padding-right:0;
+  }
+  .first_header p {
+    padding: 2em 5em;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .first_header {
+    padding: 8em 2em;
+    height: 90vh;
+  }
+  .first_header h1{
+    font-size: 5.3rem;
+    padding: 0 0;
+  }
+  .first_header p {
+    padding: 2em 5.5em;
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width:1350px) {
+  .first_header h1{
+    font-size:6rem;
+    padding: 0 0;
+  }
+  .first_header p {
+    padding: 2em 7.8em;
+    font-weight: 500;
+    font-size: 1.8em;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
