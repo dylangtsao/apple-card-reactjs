@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Script from 'next/script'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      {/* background */}
       <div className={styles.backdrop}></div>
       {/* nav-bar + mobile-nav */}
       <section>
@@ -37,7 +39,8 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.subtitle_backdrop}>
-          <a>With every purchase, get up 3% Daily Cash back to spend or save. <a className={styles.subtitle_link}>Apply now</a>{' >'}</a>
+          <a>With every purchase, get up 3% Daily Cash back to spend or save.&nbsp;</a>
+          <a className={styles.subtitle_link}>Apply now</a><a>{' >'}</a>
         </div>
       </section>
       {/* First header */}
@@ -53,6 +56,28 @@ export default function Home() {
              or save. Apple Card. It&apos;s everything a credit card should be.</p>
         </div>
       </section>
+      <section>
+        <div className={styles.created}>
+          <div className={styles.created_header}>
+            <h1>Created by Apple.<br></br>Powered by iPhone.</h1>
+            <div className={styles.created_button_background}>
+              <h2>+</h2>
+            </div>
+          </div>
+          <div className={styles.fees_header}>
+            <h1>No fees. Not even hidden ones.</h1>
+            <div className={styles.fees_button_background}>
+              <h2>+</h2>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      
+
     </main>
   )
 }
+// new variable that access mobile nav
+// const mobileNav = document.querySelector('.mobile-nav')

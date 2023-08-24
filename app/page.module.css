@@ -1,5 +1,6 @@
 .main {
   font-family: sans-serif;
+  background-color: rgba(241, 239, 239, 0.545);
 }
 
 .backdrop {
@@ -9,7 +10,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.25);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
     z-index: 100;
 }
 
@@ -275,4 +277,91 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.created {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 200vh;
+  /* box-shadow: 1px 1px rgba(0,0,0,0.25); */
+  /* background: rgba(199, 187, 187, 0.7); */
+  /* margin: 3rem 1rem; */
+  padding-top: 7rem;
+}
+
+.created_header {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  width: 70vw;
+  height: 60vh;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  /* padding: 3rem 2.5rem; */
+  
+}
+
+.created_header h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  padding: 3rem 2rem;
+}
+
+.created_header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15rem 3rem; */
+  background-color: black;
+  color:white;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  font-weight: normal;
+  margin-top: 16rem;
+  margin-left: 19rem;
+  cursor: pointer;
+}
+
+.fees_header {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  width: 70vw;
+  height: 60vh;
+  background: linear-gradient(to right bottom, rgb(252, 218, 0), rgb(252, 131, 196));
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  /* padding: 3rem 2.5rem; */
+  
+}
+
+.fees_header h1 {
+  font-size: 5.7rem;
+  line-height: 0.8;
+  font-weight: 600;
+  padding: 3rem 2rem;
+  color: white;
+}
+
+.fees_header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15rem 3rem; */
+  background-color: white;
+  color:rgb(252, 131, 196);
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  font-weight: normal;
+  /* margin-top: 0rem; */
+  margin-left: 19rem;
+  cursor: pointer;
 }
