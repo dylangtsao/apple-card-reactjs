@@ -70,7 +70,19 @@ export default function Home() {
               <h2>+</h2>
             </div>
           </div>
-          
+          <div className={styles.interest_header}>
+            <h1>The first credit card that actually encourages you to pay less interest.</h1>
+            <div className={styles.interest_button_background}>
+              <h2>+</h2>
+            </div>
+          </div>
+          <div className={styles.cash_header}>
+            <h1>Unlimited Daily Cash Back.</h1>
+            <h3>Real cash you can use right away</h3>
+            <div className={styles.interest_button_background}>
+              <h2>+</h2>
+            </div>
+          </div>
         </div>
       </section>
 
